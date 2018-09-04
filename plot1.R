@@ -31,7 +31,8 @@ str(data_date_subset)
 
 attach(data_date_subset)
 #creating histogram
+png("plot1.png")
 par(mfrow=c(1,1))
 hist(Global_active_power, col="red", xlab="Global Active Power(kilowatts)")
-
+dev.off()
 

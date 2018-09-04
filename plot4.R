@@ -1,5 +1,5 @@
 #run plot1.R first
-
+png("plot4.png")
 par(mfrow=c(2,2))
 #top left graph
 plot(date_time2_subset,Global_active_power, type="n", ylab="Global Active Power",
@@ -22,4 +22,4 @@ legend("topright", col = c("black","blue", "red"), legend =
 plot(date_time2_subset,Global_reactive_power, type="n", ylab="Global_reactive_power",
      xlab="")
 lines(date_time2_subset,Global_reactive_power)
-
+dev.off()
